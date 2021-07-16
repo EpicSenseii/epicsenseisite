@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navBar">
+        <h1> <a href="index.html">EpicSensei</a></h1>
+
+        <img id="burger" class="burger" src="images/menu.png"/>
+
+        <ul id="navLinks" class="navLinks">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+
+
+    <section class="page2 contactPage">
+     
+        <form class="formulaire" method="POST" action="https://formsubmit.co/ktk-life@hotmail.fr">
+            <input class="nomForm" type="text" placeholder="Ecrivez votre pseudo" name="name" required="required">Nom
+            <input class="mailForm" type="text" placeholder="Ecrivez votre email" name="email" required="required">Email
+            <textarea class="textForm" name="message" placeholder="Ecrivez votre messages ici" required="required"></textarea>Ecrivez votre message
+            <input type="hidden" name="_next" value="https://epicsenseii.github.io/epicsenseisite/thankyou.html">
+            <input class="submitBtn" type="submit" value="Envoyez">
+        </form>
+
+    </section>
+
+
+    <footer>
+        <!-- <h1>EpicSensei</h1> -->
+
+        <p>EpicSensei &copy 2021 All Rights Reserved.</p>
+
+        <ul class="footerLinks">
+            <img class="twitter" src="https://img.icons8.com/material-rounded/24/000000/twitter.png"/>
+            <img class="instagram" src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png"/>
+            <img class="facebook" src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>
+          
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

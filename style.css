@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/* navbar --------------------- */
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 1%;
+    font-size: 22px;
+    color: white;
+    width: 100%;
+    top: 0px;
+    position: sticky;
+}
+
+.navBar h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+.navLinks {
+    display: flex;
+    list-style-type: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+/* page1 ---------------- */
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.page1 > .mainText {
+    color: white;
+    font-size: 82px;
+}
+.page1 .descText {
+    color: white;
+    font-size: 42px;
+}
+
+/* page2------------------- */
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.page2 > h1 {
+    font-size: 40px;
+}
+
+.page2 > p {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 7rem;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+    width: 50vw;
+}
+.formulaire input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 22px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #222;
+    background-color: rgb(245, 245, 245);
+    outline: none;
+}
+.formulaire .submitBtn {
+    margin-top: 50px;
+    font-size: 22px;
+    background-color: #222;
+    color: white;
+    box-shadow: none;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer ------------------ */
+
+footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    background-color: #222;
+    padding: 2%;
+    /* font-size: 22px; */
+    color: white;
+    scroll-snap-align: start;
+}
+
+footer > p {
+    font-size: 16px;
+}
+
+.footerLinks > img {
+    margin-right: 2rem;
+}
+
+.twitter {
+    height: 30px;
+    width: 30px;
+}
+.instagram {
+    height: 30px;
+    width: 30px;
+}
+
+.facebook {
+    height: 30px;
+    width: 30px;
+}
+
+.footerLinks {
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    /* navbar --------------------- */
+
+    .navBar {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #222;
+        padding: 1%;
+        font-size: 22px;
+        color: white;
+        width: 100%;
+        top: 0px;
+        position: sticky;
+    }
+
+    .navBar h1 {
+        text-align: center;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: rgb(245, 245, 245);
+        /* position: absolute; */
+        height: 100vh;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+    }
+    .navLinks.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .burger {
+        display: block;
+        height: 20px;
+        width: 20px;
+        color: white;
+        position: absolute;
+        right: 12px;
+        top: 16px;
+        transition: 1s;
+    }
+    /* .burger.active{
+    right: 120px;
+    top: 16px;
+} */
+
+    .navLinks a {
+        text-decoration: none;
+        color: black;
+        padding-left: 30px;
+        font-size: 38px;
+    }
+
+    .navLinks li {
+        padding-bottom: 30px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+    }
+    .page1 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page1 > .mainText {
+        color: white;
+        font-size: 42px;
+        text-align: center;
+    }
+    .page1 .descText {
+        color: white;
+        font-size: 22px;
+    }
+
+    /* page2------------------- */
+
+    .page2 {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(245, 245, 245);
+        padding: 3rem;
+        display: block;
+    }
+    .page2.contactPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page2.projectPage {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .page2.descPage{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .page2 > h1 {
+        font-size: 20px;
+    }
+
+    .page2 > p {
+        font-size: 14x;
+        color: #222;
+        margin-bottom: 1rem;
+    }
+
+    /* footer ------------------ */
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #222;
+        padding: 2%;
+        /* font-size: 22px; */
+        color: white;
+        bottom: 0px;
+    }
+
+    footer > p {
+        font-size: 10px;
+    }
+
+    .footerLinks > img {
+        margin-right: 1rem;
+    }
+
+    .twitter {
+        height: 30px;
+        width: 30px;
+    }
+    .instagram {
+        height: 30px;
+        width: 30px;
+    }
+
+    .facebook {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footerLinks {
+        display: flex;
+    }
+    .formulaire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 14px;
+        width: 50vw;
+    }
+    .formulaire input,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 12px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid #222;
+        background-color: rgb(245, 245, 245);
+        outline: none;
+    }
+    .formulaire button {
+        margin-top: 50px;
+        font-size: 18px;
+        background-color: #222;
+        color: white;
+        box-shadow: none;
+        border-style: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
