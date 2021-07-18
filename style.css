@@ -353,6 +353,8 @@ footer > p {
         border-bottom: 1px solid #222;
         background-color: rgb(245, 245, 245);
         outline: none;
+        -webkit-appearance: none;
+        border-radius: 0;
     }
     .formulaire button {
         margin-top: 50px;
@@ -364,5 +366,7 @@ footer > p {
         padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
+        -webkit-appearance: none;
+        border-radius: 0;
     }
 }
