@@ -7,10 +7,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-input .submitBtn {
-    -webkit-appearance:none;
-    opacity: 1
-}
 
 ::-webkit-scrollbar {
     display: none;
@@ -122,6 +118,8 @@ textarea {
     border-bottom: 1px solid #222;
     background-color: rgb(245, 245, 245);
     outline: none;
+    -webkit-appearance:none;
+    opacity: 1
 }
 .formulaire .submitBtn {
     margin-top: 50px;
@@ -133,6 +131,8 @@ textarea {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-appearance:none;
+    opacity: 1
 }
 
 /* footer ------------------ */
